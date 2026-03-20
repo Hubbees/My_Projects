@@ -11,3 +11,6 @@ elif bmi > 24.9 and bmi <= 29.9:
     print('You Are Overweight')
 elif bmi > 29.9 and bmi <= 34.9:
     print('You Are Obese')
+print('THIS PROJECT IS DESIGNED BY NSIKAN AKPAN')
+print(int(bmi))
+print("Thank You For Using And Accessing our Calculator")
