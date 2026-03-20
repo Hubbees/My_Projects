@@ -1,0 +1,63 @@
+print('======== WELCOME TO JAMB RESULT PORTAL  ========')
+
+student= input("Please Enter Your Name: ")
+print(f'Hello {student}, Welcome to JAMB Result Portal')
+print("Please Select Your Exams Type")
+option_1 = "Arts"
+option_2 = "Science"
+option_3 = "Commercial"
+print(f'1. {option_1}')
+print(f'2. {option_2}')
+print(f'3. {option_3}')
+exam_type = input("Enter The Number Corresponding To Your Exam Type: ")
+
+if exam_type == '1':
+    print(f'You have selected {option_1} exam type')
+    if exam_type == '1':
+        print("Please Enter Your Scores For Each Subject")
+        english_score = int(input("English: "))
+        mathematics_score = int(input("Mathematics: "))
+        literature_score = int(input("Literature: "))
+        government_score = int(input("Government: "))
+        total_score = english_score + mathematics_score + literature_score + government_score
+    print(f'Your Total Score Is: {total_score}')
+elif exam_type == '2':
+    print(f'You have selected {option_2} exam type')
+    if exam_type == '2':
+        print("Please Enter Your Scores For Each Subject")
+        english_score = int(input("English: "))
+        mathematics_score = int(input("Mathematics: "))
+        physics_score = int(input("Physics: "))
+        chemistry_score = int(input("Chemistry: "))
+        total_score = english_score + mathematics_score + physics_score + chemistry_score
+        print(f'Your Total Score Is: {total_score}')
+elif exam_type == '3':
+    print(f'You have selected {option_3} exam type')
+    if exam_type == '3':
+        print("Please Enter Your Scores For Each Subject")
+        english_score = int(input("English: "))
+        mathematics_score = int(input("Mathematics: "))
+        accounting_score = int(input("Accounting: "))
+        commerce_score = int(input("Economics: "))
+        total_score = english_score + mathematics_score + accounting_score + commerce_score
+        print(f'Your Total Score Is: {total_score}')
+else:
+    print('Invalid Number Entered')
+
+if exam_type == '1' and total_score >= 150:
+    print("Congratulations! You have passed the Arts exam.")
+elif exam_type == '1' and total_score < 150:
+        print("Sorry, you did not pass the exam. Go And Read")
+if exam_type == '2' and total_score >= 150:
+    print("Congratulations! You have passed the Science exam.")
+elif exam_type == '2' and total_score < 150:
+        print("Sorry, you did not pass the exam. Go And Read")
+if exam_type == '3' and total_score >= 150:
+    print("Congratulations! You have passed the Commercial exam.")
+elif exam_type == '3' and total_score < 150:
+        print("Sorry, you did not pass the exam. Go And Read")
+else:
+            print("Invalid Number Entered")
+
+print("This Project Was Designed by Nsikan")
+print('======== THANK YOU FOR USING JAMB RESULT PORTAL  ========')
